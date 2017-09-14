@@ -1,2 +1,2 @@
-# React-Starter-Kit
-react-starter-kit
+# React-shopping-cart
+react-shopping-cart

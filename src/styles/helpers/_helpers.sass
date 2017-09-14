@@ -33,7 +33,12 @@
 .cars-list,
 .cart-list
 	h2
+		margin-bottom: 10px
 		text-align: center
+
+.cart-list
+	.row
+		margin-bottom: 25px
 
 .cars-list-block,
 .cars-cart-block,
@@ -62,3 +67,25 @@
 		display: block
 	a
 		float: right
+
+.cart-list--footer
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	align-items: center
+
+	.total-sum
+		display: block
+		text-align: right
+		font-size: 30px
+		font-weight: bold
+
+.empty-cart
+	padding: 15px
+	background: #dbe4ee
+	border: 1px solid green
+	border-radius: 5px
+	text-align: center
+
+.btn-red
+	background-color: red

@@ -1,6 +1,5 @@
 import '../styles/main.sass';
 
-import App from './app/ToDoApp';
 import CarsApp from './app/CarsApp';
 import React from 'react';
 import ReactDOM from 'react-dom';
