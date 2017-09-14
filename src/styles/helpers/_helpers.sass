@@ -1,0 +1,64 @@
+.container
+	position: relative
+	max-width: 1140px
+	margin-right: auto
+	margin-left: auto
+
+.row
+	@include grid-container
+
+.col-3
+	@include grid-column(4, $neat)
+	@include grid-visual
+
+.responsive-img
+	max-width: 100%
+	height: auto
+
+.table
+	width: 100%
+	max-width: 100%
+	margin-bottom: 1rem
+
+.cars-wrapper
+	background-color: #fff
+
+.app-title
+	margin-bottom: 30px
+	text-align: center
+	text-transform:
+	color: green
+	border-bottom: 1px solid green
+
+.cars-list,
+.cart-list
+	h2
+		text-align: center
+
+.cars-list-block,
+.cars-cart-block,
+.card-header,
+.card-desc,
+	@include grid-column(6, $neat)
+
+.cars-item-card,
+.cart-item-card
+	margin-bottom: 20px
+	padding: 10px
+	border: 1px solid #d1dbe5
+	border-radius: 4px
+	background-color: #fff
+	overflow: hidden
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.12), 0 0 6px 0 rgba(0,0,0,.04)
+
+	.card-desc
+		text-align: right
+
+	span
+		display: block
+
+.cart-item-card
+	span
+		display: block
+	a
+		float: right
