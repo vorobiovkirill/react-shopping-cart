@@ -37,33 +37,34 @@
 		text-align: center
 
 .cars-list
+
 	.ui.card
 		width: 100%
 		margin-bottom: 20px
 
+		.header
+			text-align: right
+
 .cart-list
-	.row
-		margin-bottom: 25px
 
-	.cart-item-card
-		width: 100%
-		margin-bottom: 20px
-		padding: 10px
+	&--head
+		margin-bottom: 15px
 
-		span
-			display: block
-		a
-			float: right
+	&--body
+		margin-bottom: 15px
+
+		.ui.card
+			width: 100%
+			margin-bottom: 20px
+
+			span
+				display: block
+			a
+				float: right
 
 .cars-list-block,
 .cars-cart-block
 	@include grid-column(6, $neat)
-
-.card-header
-	@include grid-column(3, $neat)
-
-.card-desc
-	@include grid-column(9, $neat)
 
 .cars-item-card
 	margin-bottom: 20px
