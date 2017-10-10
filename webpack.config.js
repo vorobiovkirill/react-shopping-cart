@@ -27,7 +27,7 @@ const config = {
 			path.resolve(__dirname, 'src'),
 			'node_modules',
 		],
-		extensions: ['.js', '.jsx', '.sass', '.scss', '.html'],
+		extensions: ['.js', '.jsx', 'css', '.sass', '.scss', '.html'],
 	},
 
 	/**
@@ -82,7 +82,7 @@ const config = {
 				use: 'url-loader?limit=100&name=img/[name].[ext]',
 			},
 			{
-				test: /\.(woff|woff2|eot|ttf|svg)$/,
+				test: /\.(eot|ttf|woff|woff2)?$/,
 				exclude: /node_modules/,
 				use: 'url-loader?limit=1024&name=fonts/[name].[ext]',
 			},

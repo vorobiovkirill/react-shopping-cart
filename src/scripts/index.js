@@ -8,8 +8,6 @@ import ReactDOM from 'react-dom';
 import configureStore from './app/redux/store/configureStore';
 import styled from 'styled-components';
 
-// import '../../node_modules/semantic-ui-css/semantic.min.css';
-
 const store = configureStore();
 const ROOT = document.getElementById('root');
 
