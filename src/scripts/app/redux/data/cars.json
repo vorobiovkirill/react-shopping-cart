@@ -1,0 +1,59 @@
+{
+  "cars": [{
+      "id": 1,
+      "modelName": "Audi",
+      "price": 2050,
+      "description": "lorem ss ssd sdasd as asd asd asd ",
+      "img": "https://auto-energy.com.ua/media/widgetkit/A8-03-10-6dd4983b5d34bdefaa2f02ed3422b833.jpg"
+    },
+    {
+      "id": 2,
+      "modelName": "BMW",
+      "price": 3040,
+      "description": "lorem ss ssd sdasd as asd asd asd ",
+      "img": "https://auto-energy.com.ua/media/widgetkit/A8-03-10-6dd4983b5d34bdefaa2f02ed3422b833.jpg"
+    },
+    {
+      "id": 3,
+      "modelName": "Mersedes",
+      "price": 2400,
+      "description": "lorem ss ssd sdasd as asd asd asd ",
+      "img": "https://auto-energy.com.ua/media/widgetkit/A8-03-10-6dd4983b5d34bdefaa2f02ed3422b833.jpg"
+    },
+    {
+      "id": 4,
+      "modelName": "Fiat",
+      "price": 2012,
+      "description": "lorem ss ssd sdasd as asd asd asd ",
+      "img": "https://auto-energy.com.ua/media/widgetkit/A8-03-10-6dd4983b5d34bdefaa2f02ed3422b833.jpg"
+    },
+    {
+      "id": 5,
+      "modelName": "Toyota",
+      "price": 2160,
+      "description": "lorem ss ssd sdasd as asd asd asd ",
+      "img": "https://auto-energy.com.ua/media/widgetkit/A8-03-10-6dd4983b5d34bdefaa2f02ed3422b833.jpg"
+    },
+    {
+      "id": 6,
+      "modelName": "Lexus",
+      "price": 2950,
+      "description": "lorem ss ssd sdasd as asd asd asd ",
+      "img": "https://auto-energy.com.ua/media/widgetkit/A8-03-10-6dd4983b5d34bdefaa2f02ed3422b833.jpg"
+    },
+    {
+      "id": 7,
+      "modelName": "Ferrari",
+      "price": 20,
+      "description": "lorem ss ssd sdasd as asd asd asd ",
+      "img": "https://auto-energy.com.ua/media/widgetkit/A8-03-10-6dd4983b5d34bdefaa2f02ed3422b833.jpg"
+    },
+    {
+      "id": 8,
+      "modelName": "Lada",
+      "price": 20,
+      "description": "lorem ss ssd sdasd as asd asd asd ",
+      "img": "https://auto-energy.com.ua/media/widgetkit/A8-03-10-6dd4983b5d34bdefaa2f02ed3422b833.jpg"
+    }
+  ]
+}
