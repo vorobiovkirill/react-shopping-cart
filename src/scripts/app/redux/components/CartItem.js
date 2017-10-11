@@ -25,7 +25,9 @@ class CartItem extends Component {
 			<li>
 				<Card className="cart-item-card">
 					<Card.Content>
-						<a href="#" onClick={this.handleRemove}><Icon link color="red" name="trash outline" /></a>
+						<a href="#" onClick={this.handleRemove}>
+							<Icon link color="red" className="del-item" name="delete" />
+						</a>
 						<span className="cart-item__name"><strong>Model:</strong> {modelName}</span>
 						<span className="cart-item__price"><strong>Price:</strong> {price}</span>
 					</Card.Content>
