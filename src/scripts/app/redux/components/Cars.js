@@ -7,14 +7,6 @@ import _ from 'lodash';
 
 class Cars extends Component {
 
-	state = {
-		activeItem: '1',
-		currentPage: 1,
-		itemsPerPage: 4,
-	}
-
-	handleItemClick = (e, { name }) => this.setState({ activeItem: name })
-
 	addItemToCart = (id, modelName, price) => {
 		this.props.addItemToCart(id, modelName, price);
 	}
@@ -23,16 +15,26 @@ class Cars extends Component {
 		this.props.removeItemFromCart(id);
 	}
 
+	paginations = (name) => {
+		this.props.paginations(name);
+	}
+
 	render() {
-		const { cars, selected } = this.props;
-		const { activeItem, currentPage, itemsPerPage } = this.state;
+		const {
+			cars,
+			itemsInCart,
+			selected,
+			currentPage,
+			itemsPerPage,
+			activeItem,
+		} = this.props;
 
 		// Logic for displaying cars
 		const indexOfLastItem = activeItem * itemsPerPage;
 		const indexOfFirstItem = indexOfLastItem - itemsPerPage;
 		const currentItems = _.slice(cars, indexOfFirstItem, indexOfLastItem);
 
-		const carsList = _.map(currentItems, (car) => {
+		const listOfCarsItems = _.map(currentItems, (car) => {
 			const selectedCar = _.indexOf(selected, car.id) > -1;
 			return (
 				<CarsItem
@@ -51,14 +53,14 @@ class Cars extends Component {
 					<div className="cars-list">
 						<h2>Cars List</h2>
 						<Item.Group divided>
-							{carsList}
+							{listOfCarsItems}
 						</Item.Group>
 					</div>
 				</div>
 				<div className="row">
 					<Menu pagination>
-						<Menu.Item name="1" active={activeItem === '1'} onClick={this.handleItemClick} />
-						<Menu.Item name="2" active={activeItem === '2'} onClick={this.handleItemClick} />
+						<Menu.Item name="1" active={activeItem === '1'} onClick={(e, { name }) => this.paginations(name)} />
+						<Menu.Item name="2" active={activeItem === '2'} onClick={(e, { name }) => this.paginations(name)} />
 						<Menu.Item disabled>...</Menu.Item>
 					</Menu>
 				</div>

@@ -1,4 +1,4 @@
-import { addItemToCart, removeItemFromCart } from '../actions/actionsTypes';
+import { addItemToCart, paginations, removeItemFromCart } from '../actions/actionsTypes';
 
 import Cars from '../components/Cars';
 import PropTypes from 'prop-types';
@@ -10,6 +10,7 @@ import { connect } from 'react-redux';
 const mapStateToProps = (state) => {
 	return {
 		cars: state.reduser.cars,
+		itemsInCart: state.reduser.itemsInCart,
 		selected: state.reduser.selectedCar,
 		activeItem: state.reduser.activeItem,
 		currentPage: state.reduser.currentPage,
@@ -22,6 +23,7 @@ const mapDispatchToProps = (dispatch) => {
 	return bindActionCreators({
 		addItemToCart,
 		removeItemFromCart,
+		paginations,
 	}, dispatch);
 };
 

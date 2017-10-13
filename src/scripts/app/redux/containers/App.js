@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { addItemToCart, removeAllItemsFromCart, removeItemFromCart } from '../actions/actionsTypes';
+import { addItemToCart, paginations, removeAllItemsFromCart, removeItemFromCart } from '../actions/actionsTypes';
 
 import CarsContainer from '../containers/CarsContainer';
 import CartContainer from '../containers/CartContainer';

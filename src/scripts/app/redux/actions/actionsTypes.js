@@ -1,4 +1,4 @@
-import { ADD_ITEM_TO_CART, REMOVE_ALL_ITEMS_FROM_CART, REMOVE_ITEM_FROM_CART } from '../constants';
+import { ADD_ITEM_TO_CART, PAGINATIONS, REMOVE_ALL_ITEMS_FROM_CART, REMOVE_ITEM_FROM_CART } from '../constants';
 
 export const addItemToCart = (id, modelName, price) => {
 	return {
@@ -26,5 +26,12 @@ export const removeAllItemsFromCart = (id) => {
 		payload: {
 			id,
 		},
+	};
+};
+
+export const paginations = (name) => {
+	return {
+		type: PAGINATIONS,
+		name,
 	};
 };

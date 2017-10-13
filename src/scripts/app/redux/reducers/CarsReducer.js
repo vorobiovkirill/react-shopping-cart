@@ -1,4 +1,4 @@
-import { ADD_ITEM_TO_CART, REMOVE_ALL_ITEMS_FROM_CART, REMOVE_ITEM_FROM_CART } from '../constants';
+import { ADD_ITEM_TO_CART, PAGINATIONS, REMOVE_ALL_ITEMS_FROM_CART, REMOVE_ITEM_FROM_CART } from '../constants';
 
 import _ from 'lodash';
 import cars from '../data/cars';
@@ -52,6 +52,11 @@ const CarsReducer = (state = initialState, action) => {
 		}
 		case REMOVE_ALL_ITEMS_FROM_CART:
 			return initialState;
+		case PAGINATIONS:
+			return {
+				...state,
+				activeItem: action.name,
+			};
 		default:
 			return state;
 	}

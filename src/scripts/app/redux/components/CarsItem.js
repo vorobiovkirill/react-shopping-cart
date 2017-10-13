@@ -11,9 +11,9 @@ class CarsItem extends Component {
 	}
 
 	handleClick(id) {
-		const itemInCart = this.props.selected;
+		const addItemInCart = this.props.selected;
 
-		if (itemInCart) {
+		if (addItemInCart) {
 			this.props.removeItemFromCart(id);
 		} else {
 			this.props.addItemToCart(id);
@@ -21,7 +21,7 @@ class CarsItem extends Component {
 	}
 
 	render() {
-		const itemInCart = this.props.selected;
+		const addItemInCart = this.props.selected;
 
 		const {
 			img,
@@ -38,11 +38,11 @@ class CarsItem extends Component {
 					<Item.Description>{description}</Item.Description>
 					<Item.Extra>
 						<Button
-							content={!itemInCart ? ('Add To Cart') : ('Remove')}
+							content={!addItemInCart ? ('Add To Cart') : ('Remove')}
 							type="button"
-							color={!itemInCart ? ('teal') : ('red')}
+							color={!addItemInCart ? ('teal') : ('red')}
 							floated="right"
-							className={!itemInCart ? ('btn') : ('btn-remove')}
+							className={!addItemInCart ? ('btn') : ('btn-remove')}
 							onClick={this.handleClick}
 						/>
 						<Label>IMAX</Label>

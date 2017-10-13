@@ -23,7 +23,7 @@ class Cart extends Component {
 			currency,
 		} = this.props;
 
-		const carsItem = _.map(itemsInCart, (item, index) => {
+		const listOfItemsInCart = _.map(itemsInCart, (item, index) => {
 			return (
 				<CartItem
 					key={item.id}
@@ -49,7 +49,7 @@ class Cart extends Component {
 								content={cartMessage}
 							/>
 						}
-						{carsItem}
+						{listOfItemsInCart}
 					</ul>
 				</div>
 
